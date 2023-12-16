@@ -24,7 +24,7 @@ for (let i = 0; i < lines.length; i++) {
     );
   }
 
-  const symbols = lines[i].match(/[*#+$%=r/]/g);
+  const symbols = lines[i].match(/[*#+$%=/-]/g);
   if (symbols) {
     allSymbols.push(
       symbols.flatMap((sym) => {
